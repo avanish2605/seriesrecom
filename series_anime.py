@@ -56,7 +56,7 @@ def rem(sa):
 tv_dict = pickle.load(open('tv_dict6.pkl','rb'))
 tv = pd.DataFrame(tv_dict)
 
-with lzma.open('csimi3.pkl.xz','rb') as f:
+with lzma.open('cisimi3.pkl.xz','rb') as f:
     csimi = pickle.load(f)
 
 options = ['Tap here to select from dropdown menu or write it !!'] + list(tv['Title'].values)
@@ -80,6 +80,7 @@ if st.button('suggest'):
         with col2:
             st.write(f"**{title}**")
             st.write(des)
+
 
 
 

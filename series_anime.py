@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 import lzma
 
-anime = pd.read_csv("C:/Users/HP/PycharmProjects/seriesrecommender/imdb_anime.csv")
+anime = pd.read_csv("imdb_anime.csv")
 OMDB_API_KEY = '2b94772e'
 
 # 🔧 Helper: Check if it's anime (you can improve with a flag column)
@@ -80,5 +80,6 @@ if st.button('suggest'):
         with col2:
             st.write(f"**{title}**")
             st.write(des)
+
 
 
